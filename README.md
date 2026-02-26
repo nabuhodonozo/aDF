@@ -28,11 +28,11 @@ Delete all of them to ensure a clean reset.
 
 aDF is a **complete rewrite** of the classic armor/debuff tracking addon, specifically optimized on Turtle WoW. It displays critical defensive information about your target in a lightweight, efficient HUD.
 
-<img width="560" height="771" alt="adf_1" src="https://github.com/user-attachments/assets/f6ca1fde-ae0b-4e1d-9ff5-ad206e3f1cec" />
+<img width="977" height="657" alt="image" src="https://github.com/user-attachments/assets/e3f4166f-e6df-44cd-8466-e442ad8398d9" />
 
 ------
 
-<img width="249" height="168" alt="adf_2" src="https://github.com/user-attachments/assets/d0eb3ac4-b37e-45d2-aa0f-3c4e34827876" />
+<img width="211" height="130" alt="image" src="https://github.com/user-attachments/assets/ade1c3b1-f368-4238-ae4e-8505476c1031" />
 
 ### Features
 
@@ -66,5 +66,6 @@ This version can see in https://github.com/Autignem/aDF/issues. Pull request are
 - **Goffauxs** - Code contributions and improvements
 
 Last version developed Zebouski
+
 
 
