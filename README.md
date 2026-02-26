@@ -48,6 +48,7 @@ aDF is a **complete rewrite** of the classic armor/debuff tracking addon, specif
 - /adf show - Show the HUD
 - /adf hide - Hide the HUD
 - /adf options - Open configuration panel
+- /adf reset - Resert positions
 
 ## Known issues
 
@@ -66,6 +67,7 @@ This version can see in https://github.com/Autignem/aDF/issues. Pull request are
 - **Goffauxs** - Code contributions and improvements
 
 Last version developed Zebouski
+
 
 
 
