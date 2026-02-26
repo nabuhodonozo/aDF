@@ -30,13 +30,13 @@ Inside the `SavedVariables/` folder, find and delete:
 
 **DO NOT DELETE ANY OTHER FILES IN THIS FOLDER!**
 
-#### **4. INSTALL NEW aDF v4.0:**
+#### **4. INSTALL NEW aDF v4.3:**
 1. Delete old addon folder: `Interface/AddOns/aDF/`
-2. Extract new v4.0 files to: `Interface/AddOns/aDF/`
+2. Extract new v4.3 files to: `Interface/AddOns/aDF/`
 
 #### **5. LAUNCH WORLD OF WARCRAFT**
 - Start WoW normally
-- aDF v4.0 will create fresh configuration files
+- aDF v4.3 will create fresh configuration files
 - Use `/adf options` to configure your settings
 
 ---
@@ -52,6 +52,22 @@ If you accidentally delete wrong files:
 1. Check Windows Recycle Bin
 2. Restore any non-aDF files you deleted
 3. Other addons will recreate their settings when you launch WoW
+
+--- Version --- v4.3
+
+### CHANGES:
+- Modular codebase split into core/, logic/, ui/, and config/.
+- New multi-column options interface.
+- Fix /adf show and /adf hide now persist between sessions.
+- Debuff options grouped by categories (Armor, Resistance, Utility, Damage, Other).
+- Resolved UI conflicts causing the options panel to overlap with other addon frames.
+- Fixed drag-and-drop functionality for debuff icons.
+
+--- Version --- v4.2.1
+
+### CHANGES:
+- Added Shadow Vulnerability (Warlock).
+- Added Seal of the Crusader (Paladin).
 
 --- New Version --- v4.2
 
@@ -198,6 +214,7 @@ rewrote the core
 
 
 First release
+
 
 
 

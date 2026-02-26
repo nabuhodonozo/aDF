@@ -1,8 +1,8 @@
 # aDF - Amor/debuff Frame for Turtle WoW
 
-### 🔄 **UPDATING FROM OLDER VERSIONS? READ THIS!** v1.0-v4.2
+### 🔄 **UPDATING FROM OLDER VERSIONS? READ THIS!** v1.0-v4.3
 
-aDF v4.2.1 is a **complete codebase rewrite** with different data structures. You **MUST** clean your SavedVariables:
+aDF v4.2.1+ is a **complete codebase rewrite** with different data structures. You **MUST** clean your SavedVariables:
 
 #### Step-by-Step Update Guide:
 1. **Exit WoW completely** (to desktop, not just `/reload`)
@@ -11,7 +11,7 @@ World of Warcraft/Turtle WoW/WTF/Account/[YOUR_ACCOUNT]/SavedVariables/
 3. Delete **ONLY** these 2 files:
 - `aDF.lua`
 - `aDF.lua.bak` (if exists)
-4. Install new aDF v4.2.1 to `Interface/AddOns/aDF/`
+4. Install new aDF v4.3 to `Interface/AddOns/aDF/`
 5. Launch WoW - fresh config will be created
 
 **⚠️ WARNING:** Never delete your entire WTF folder! This would lose ALL addon settings.
@@ -23,8 +23,6 @@ World of Warcraft/Turtle WoW/WTF/Account/[YOUR_ACCOUNT]/[Server]/[YOUR_CHARACTER
 Delete all of them to ensure a clean reset.
 
 ** More info in Readme.txt **
-
-## Version actualy 4.2.1
 
 ### Description
 
@@ -68,3 +66,5 @@ This version can see in https://github.com/Autignem/aDF/issues. Pull request are
 - **Goffauxs** - Code contributions and improvements
 
 Last version developed Zebouski
+
+
