@@ -1,3 +1,9 @@
+-- Module: events.lua
+-- Purpose: main event dispatcher and startup sequence.
+-- Exports: aDF:OnEvent() and SetScript("OnEvent", ...).
+-- Depends on: EnsureConfigStructure(), aDF_Default(), aDF_State, Update/Init/Sort.
+-- Used by: WoW event system.
+
 -- ==== EVENT HANDLING ==== Main event handling
 local S = aDF_State
 local lastAuraTime = 0
@@ -87,5 +93,6 @@ end
 
 -- ==== SCRIPT REGISTRATION ====
 -- Register the main event handler, if commented/delete the addon will not work, plis don't touch :(
+
 
 aDF:SetScript("OnEvent", aDF.OnEvent)
