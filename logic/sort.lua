@@ -1,3 +1,9 @@
+-- Module: sort.lua
+-- Purpose: show/hide and position debuff icons in configured order/grid.
+-- Exports: aDF:Sort().
+-- Depends on: GetDB(), aDFOrder, aDFDebuffs, aDF_frames.
+-- Used by: events, options UI and slash workflows.
+
 -- ==== SORT & POSITIONING ==== 
 -- This block positions the icons. Sort function to show/hide frames and position them correctly
 local floor = math.floor
@@ -68,4 +74,5 @@ function aDF:Sort()
         aDF_DebuffFrame:SetWidth(size * widthColumns)
         aDF_DebuffFrame:SetHeight(size * totalRows)
     end
+
 end
