@@ -1,3 +1,9 @@
+-- Module: frames.lua
+-- Purpose: create and configure main HUD frames (armor/res/debuff).
+-- Exports: aDF:Init().
+-- Depends on: GetDB(), aDF_frames, constants, aDF.Create_frame().
+-- Used by: core/events.lua at ADDON_LOADED.
+
 -- ==== MAIN ARMOR/RESISTANCE FRAME ====
 local floor = math.floor
 
@@ -210,6 +216,7 @@ function aDF:Init()
 			aDF_DebuffFrame:SetBackdrop(nil)
 		end
 	end
+
 
 	-- Text visibility
 
