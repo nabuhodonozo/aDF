@@ -1,3 +1,9 @@
+-- Module: slash.lua
+-- Purpose: provide /adf command handlers.
+-- Exports: aDF.slash + SlashCmdList registration.
+-- Depends on: GetDB(), HUD frame globals, aDF.Options.
+-- Used by: chat command interface.
+
 -- ==== SLASH COMMANDS ==== Define the /adf commands
 
 function aDF.slash(arg1,arg2,arg3)
@@ -55,4 +61,5 @@ end
 
 SlashCmdList['ADF_SLASH'] = aDF.slash
 SLASH_ADF_SLASH1 = '/adf'
+
 SLASH_ADF_SLASH2 = '/ADF'
