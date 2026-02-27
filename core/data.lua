@@ -1,3 +1,9 @@
+-- Module: data.lua
+-- Purpose: central static data for tracked debuffs and armor mapping.
+-- Exports: aDFSpells, aDFDebuffs, aDFArmorVals, aDFOrder.
+-- Depends on: none.
+-- Used by: logic/aura.lua, logic/update.lua, logic/sort.lua, ui/options_shell.lua.
+
 -- ==== DATA TABLES: SPELLS AND DEBUFFS ==== Esta es la tabla de datos de debuffs
 
 -- Translation table for debuff check on target
@@ -162,4 +168,5 @@ aDFOrder = {
 	"Shadow Weaving",
     "Nightfall",
     "Flame Buffet" --arcanite dragon
+
 }
