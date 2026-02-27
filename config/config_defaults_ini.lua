@@ -1,3 +1,9 @@
+-- Module: config_defaults_ini.lua
+-- Purpose: initialize profile defaults that depend on runtime data tables.
+-- Exports: aDF_Default().
+-- Depends on: GetDB(), aDFDebuffs.
+-- Used by: core/events.lua during ADDON_LOADED.
+
 -- ==== UTILITY FUNCTIONS ==== 
 -- Utility functions (defaults, debug)
 
@@ -12,4 +18,5 @@ function aDF_Default()
 			db.enabledDebuffs[k] = true  -- All active by default
 		end
 	end
+
 end
