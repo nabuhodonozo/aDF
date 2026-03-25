@@ -42,6 +42,7 @@ aDF.Options = CreateFrame("Frame","aDF_OptionsFrame",UIParent) -- Options frame 
 
 aDF:RegisterEvent("ADDON_LOADED")
 aDF:RegisterEvent("UNIT_AURA")
-
 aDF:RegisterEvent("PLAYER_TARGET_CHANGED")
+aDF:RegisterEvent("PLAYER_REGEN_ENABLED")
+aDF:RegisterEvent("PLAYER_REGEN_DISABLED")
 

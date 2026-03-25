@@ -89,6 +89,18 @@ function aDF:OnEvent()
         aDF:Update()
         return
     end
+    
+    if event == "PLAYER_REGEN_DISABLED" then
+        S.inCombat = true
+        aDF:UpdateFrameVisibility()
+        return
+    end
+    
+    if event == "PLAYER_REGEN_ENABLED" then
+        S.inCombat = false
+        aDF:UpdateFrameVisibility()
+        return
+    end
 end
 
 -- ==== SCRIPT REGISTRATION ====

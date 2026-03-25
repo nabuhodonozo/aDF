@@ -16,12 +16,12 @@ aDF_frames = {}       -- Container for all debuff frame elements
 aDF_State = {
     target = nil,
     armorPrev = 30000,
-    lastResUpdate = 0
+    lastResUpdate = 0,
+    inCombat = false
 }
 
 -- Global frames for external access
 
 aDF_ArmorFrame = nil
 aDF_DebuffFrame = nil
-
 aDF_ResFrame = nil
