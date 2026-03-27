@@ -17,6 +17,7 @@ ui\frames.lua
 logic\aura.lua
 logic\sort.lua
 logic\update.lua
+logic\frame_visibility.lua
 ui\options_widgets.lua
 ui\options_registry.lua
 ui\options_shell.lua

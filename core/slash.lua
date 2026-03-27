@@ -7,7 +7,7 @@
 -- ==== SLASH COMMANDS ==== Define the /adf commands
 
 function aDF.slash(arg1,arg2,arg3)
-	local db = GetDB()  -- Get current configuration
+	local db = aDF:GetDB()  -- Get current configuration
     
     if arg1 == nil or arg1 == "" then
         DEFAULT_CHAT_FRAME:AddMessage("|cFFF5F54A aDF:|r type |cFFFFFF00 /adf show|r to show frame",1,1,1)

@@ -1,6 +1,6 @@
 -- Module: config_variables.lua
 -- Purpose: define SavedVariables defaults and provide safe config access.
--- Exports: EnsureConfigStructure(), GetDB(), ICON_BASE/FONT_BASE_* constants.
+-- Exports: EnsureConfigStructure(), aDF:GetDB(), ICON_BASE/FONT_BASE_* constants.
 -- Depends on: global aDF_Options SavedVariables.
 -- Used by: all runtime, logic and UI modules through GetDB().
 
@@ -135,7 +135,7 @@ end
 
 -- Quick and safe access to the current configuration
 
-function GetDB()
+function aDF:GetDB()
 	return GetConfig()
 end
 

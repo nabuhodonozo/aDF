@@ -10,7 +10,7 @@
 -- Initialize default configuration for debuff checkboxes
 
 function aDF_Default()
-	local db = GetDB()  -- Get current configuration
+	local db = aDF:GetDB()  -- Get current configuration
     
 	if not db.enabledDebuffs or not next(db.enabledDebuffs) then
 		db.enabledDebuffs = {}

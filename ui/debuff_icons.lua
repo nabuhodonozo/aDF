@@ -9,7 +9,7 @@
 -- Creates the debuff frame elements
 
 function aDF.Create_frame(name)
-	local db = GetDB()  -- Get current configuration
+	local db = aDF:GetDB()  -- Get current configuration
 	local frame = CreateFrame('Button', name, aDF)
 	frame:SetBackdrop({ bgFile=[[Interface/Tooltips/UI-Tooltip-Background]] }) --study to delete
 	frame:SetBackdropColor(255,255,255,0) --study to delete

@@ -183,7 +183,7 @@ function aDF.Options:AddContentWidget(widget)
 end
 
 function aDF.Options:RenderView(viewId)
-    local db = GetDB()
+    local db = aDF:GetDB()
     local W = aDF_OptionsWidgets
     local host = self.contentHost
 

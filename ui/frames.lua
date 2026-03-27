@@ -4,38 +4,11 @@
 -- Depends on: GetDB(), aDF_frames, constants, aDF.Create_frame().
 -- Used by: core/events.lua at ADDON_LOADED.
 
--- Function to update frame visibility based on combat status
-function aDF:UpdateFrameVisibility()
-    if aDF_ArmorFrame then
-        if aDF_State.inCombat then
-            aDF_ArmorFrame:Show()
-        else
-            aDF_ArmorFrame:Hide()
-        end
-    end
-    
-    if aDF_ResFrame then
-        if aDF_State.inCombat then
-            aDF_ResFrame:Show()
-        else
-            aDF_ResFrame:Hide()
-        end
-    end
-    
-    if aDF_DebuffFrame then
-        if aDF_State.inCombat then
-            aDF_DebuffFrame:Show()
-        else
-            aDF_DebuffFrame:Hide()
-        end
-    end
-end
-
     -- ==== MAIN ARMOR/RESISTANCE FRAME ====
 local floor = math.floor
 
 function aDF:Init()
-	local db = GetDB()  -- Get current configuration
+	local db = aDF:GetDB()  -- Get current configuration
     
     -- ==== ARMOR FRAME ==== subsection
 

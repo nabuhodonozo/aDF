@@ -17,7 +17,8 @@ aDF_State = {
     target = nil,
     armorPrev = 30000,
     lastResUpdate = 0,
-    inCombat = false
+    inCombat = false,
+    targetHasTrackedDebuff = false
 }
 
 -- Global frames for external access

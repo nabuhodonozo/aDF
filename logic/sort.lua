@@ -12,7 +12,7 @@ local min = math.min
 local mod = math.mod
 
 function aDF:Sort()
-	local db = GetDB()  -- Get current configuration
+	local db = aDF:GetDB()  -- Get current configuration
 
 	-- First, build ordered list according to aDFOrder
 

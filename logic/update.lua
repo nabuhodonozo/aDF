@@ -11,7 +11,7 @@ local lastIconUpdate = 0
 local ICON_UPDATE_THROTTLE = 0.5
 
 function aDF:Update()
-	local db = GetDB()  -- Get current configuration
+	local db = aDF:GetDB()  -- Get current configuration
     
     if not S.target or not UnitExists(S.target) or UnitIsDead(S.target) or UnitIsFriend("player", S.target) then
         if aDF_ArmorFrame and aDF_ArmorFrame.armor then
@@ -26,6 +26,7 @@ function aDF:Update()
                 aDF_frames[i].nr:SetText("")
             end
         end
+        db.targetHasTrackedDebuff=false
         return
     end
     
@@ -87,8 +88,8 @@ function aDF:Update()
 
 	if now - lastIconUpdate > ICON_UPDATE_THROTTLE then
         lastIconUpdate = now
-        
-        for debuffName, _ in pairs(db.enabledDebuffs) do
+        S.targetHasTrackedDebuff = false
+        for debuffName, isEnabled in pairs(db.enabledDebuffs) do
             local frame = aDF_frames[debuffName]
             if frame then
                 local hasDebuff = aDF:GetDebuff(S.target, aDFSpells[debuffName])
@@ -96,8 +97,12 @@ function aDF:Update()
                 
                 frame.icon:SetAlpha(hasDebuff and 1 or 0.3)
                 frame.nr:SetText((stacks > 1) and tostring(stacks) or "")
+                if hasDebuff and isEnabled then
+                    S.targetHasTrackedDebuff = true
+                end
             end
         end
+        aDF:UpdateFrameVisibility()
     end
 
 end
